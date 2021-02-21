@@ -1,0 +1,104 @@
+!%
+!=============================================================================
+Include "CyrDef";
+
+Global hint_menu = game_hints;
+
+Constant Story "Меню подсказок";
+Constant Headline
+    "^Демо-игра с меню с подсказками.^";
+
+Replace DoMenu;
+Replace LowKey_Menu;
+
+Include "Parser";
+
+Include "VerbLib";
+Include "HelpRoutines";
+Include "utility";
+Include "domenu";
+Include "AltMenu";
+Include "Hints";
+
+Menu    game_hints "Если вы играете в Интерактивную Литературу впервые"
+with    banner_tags "N = Вниз" "P = Вверх" "ENTER = Выбор" " Q = Назад" "Q = Назад" 9 9;
+
+HintTopic   introduction_menu "Введение" game_hints;
+
+Hint    "Введение" introduction_menu
+with    description [;
+            LongIntro();
+        ]
+;
+
+HintTopic   prompt_menu "Что это @<<>@>> такое?" game_hints;
+
+Hint    "Что это @<<>@>> такое?" prompt_menu
+with    description [;
+            ExplainPrompt();
+        ]
+;
+
+HintTopic   starting_instructions_menu "Начальные инструкции" game_hints;
+
+Hint    "Начальные инструкции" starting_instructions_menu
+with    description [;
+            StartingInstructions();
+        ]
+;
+
+HintTopic   stuck_instructions_menu "Если вы застряли" game_hints;
+
+Hint    "Если вы застряли" stuck_instructions_menu
+with    description [;
+            StuckInstructions();
+        ]
+;
+
+HintTopic   standard_verbs_menu "Стандартные глаголы" game_hints;
+
+Hint    "Стандартные глаголы" standard_verbs_menu
+with    description [;
+            StandardVerbs();
+        ]
+;
+
+HintTopic   abbreviations_menu "Аббревиатуры" game_hints;
+
+Hint    "Аббревиатуры" abbreviations_menu
+with    description [;
+            Abbreviations();
+        ]
+;
+
+HintTopic   communications_menu "Общение" game_hints;
+
+Hint    "Общение" communications_menu
+with    description [;
+            AllCommunication();
+        ]
+;
+
+HintTopic   internet_menu "Ресурсы в интернете" game_hints;
+
+Hint    "Ресурсы в интернете" internet_menu
+with    description [;
+            MoreGames();
+        ]
+;
+
+! Чтобы убрать предупреждения компилятора
+Object label;
+Object toggle;
+Object menu_style;
+Object sup_bar;
+
+[ Initialise;
+    location = test_room;
+];
+
+Object test_room "Демонстрационная комната"
+    with description "Введите @<<справка@>> чтобы увидеть меню.",
+    has light;
+
+Include "RussiaG";
