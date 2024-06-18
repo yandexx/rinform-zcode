@@ -640,8 +640,7 @@ system_file;
 
 [ MoreGames;
 	print (ESB) "–”—— ќя«џ„Ќќ≈ »Ћ-—ќќЅў≈—“¬ќ^^";
-	print "ƒружелюбный Discord-сервер: https://discord.gg/X86kkzM^^";
+	print "ƒружелюбный Discord-сервер: https://discord.gg/MdT2ZnQ^^";
 	print "√лавный форум, посв€щЄнный интерактивной литературе, написанной дл€ любых платформ: http://ifiction.ru/^^";
 	print "—айт, посв€щЄнный русской адаптации платформы Inform (на которой написана эта игра), http://rinform.org/^^";
-	print "IRC-канал, на котором можно найти активных участников сообщества: #ifrus в сети irc.forestnet.org^";
 ];
