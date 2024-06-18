@@ -3,7 +3,23 @@
 !   RUSSIAN: Language Definition File for Inform 6
 !   Source encoding: CP1251
 !
-!   Copyright (C) Grankin Andrey 2002, Gayev Denis 2003-2004
+!   Copyright (C) 2002 Grankin Andrey
+!   Copyright (C) 2003, 2004 Gayev Denis
+!   Copyright (C) 2010, 2017, 2018 Vsevolod Zubarev
+!
+!   This library is free software; you can redistribute it and/or
+!   modify it under the terms of the GNU Library General Public
+!   License as published by the Free Software Foundation version 2.
+!
+!   This library is distributed in the hope that it will be useful,
+!   but WITHOUT ANY WARRANTY; without even the implied warranty of
+!   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+!   Library General Public License for more details.
+!
+!   You should have received a copy of the GNU Library General Public
+!   License along with this library; if not, write to the
+!   Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
+!   Boston, MA  02110-1301, USA.
 !
 !   Based on:
 !	English Release 6/11 Serial number 040227
